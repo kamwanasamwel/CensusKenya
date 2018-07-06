@@ -82,6 +82,7 @@ DATABASES = {
         'PASSWORD': 'transcend4gb',
         'HOST': 'localhost',
         'PORT': 5432,
+        'PASSWORD': 31597310,
     }
 }
 

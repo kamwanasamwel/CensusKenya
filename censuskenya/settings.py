@@ -79,6 +79,7 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'censuskenya',
         'USER': 'postgres',
+        'PASSWORD':
         'HOST': 'localhost',
         'PORT': 5432,
     }

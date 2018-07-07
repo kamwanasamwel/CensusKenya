@@ -17,11 +17,7 @@ class Homes(models.Model):
 
 class General(models.Model):
     hs_code = models.ForeignKey(Homested, on_delete=models.CASCADE)
-<<<<<<< HEAD
-    hm_code = models.ForeignKey(Home, models.CASCADE)
-=======
     hm_code = models.ForeignKey(Homes, on_delete=models.CASCADE)
->>>>>>> 4cee522b5ba74bebbf072f9894a8bb1e0305504d
     time = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=25)
     relationshipToHead = models.CharField(max_length=15)

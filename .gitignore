@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 settings.py
+=======
+>>>>>>> 1b951f81e10f7f57eff36fb98a88245efd6ca358
 git rm --cached censuskenya/settings.py
 **/__pycache__/**
 **/migrations/**

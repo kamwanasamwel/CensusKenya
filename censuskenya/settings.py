@@ -83,6 +83,7 @@ DATABASES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'USER': 'postgres',
         'HOST': 'localhost',
         'PORT': 5432,
@@ -108,6 +109,13 @@ DATABASES = {
         'PASSWORD': 'julie',
         
 >>>>>>> 3b7c63a7e478008a7f841505ec4a9aff4f3626b9
+=======
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'PASSWORD': 'julie',
+        
+>>>>>>> 1b951f81e10f7f57eff36fb98a88245efd6ca358
     }
 }
 

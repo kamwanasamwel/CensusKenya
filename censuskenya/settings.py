@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'mainCensus',
+    'leaflet'
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,7 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'censuskenya',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'USER': 'postgres',
         'HOST': 'localhost',
         'PORT': 5432,
@@ -91,6 +93,13 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': 5432,
 >>>>>>> 3039206cb504d581d2e4666e4794801dd6898442
+=======
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'PASSWORD': 'julie',
+        
+>>>>>>> 3b7c63a7e478008a7f841505ec4a9aff4f3626b9
     }
 }
 

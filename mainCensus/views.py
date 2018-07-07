@@ -6,3 +6,7 @@ from .models import General
 def home(request):
     everybody = General.objects.all()
     return render(request, 'temps/home.html', {'everybody':everybody})
+
+# def geom(requests):
+#     data = {'data': None}
+#     poly = 

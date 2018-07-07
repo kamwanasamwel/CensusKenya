@@ -6,18 +6,25 @@ class Homested(models.Model):
     hs_code = models.CharField(max_length=7)
     location = models.PointField(srid=4326)
 
+    def __str__(self):
+        return self.hs_code
+
 
 class Homes(models.Model):
-    hs_code = models.ForeignKey(Homested, on_delete=cascade)
+    hs_code = models.ForeignKey(Homested, on_delete=models.CASCADE)
     head = models.CharField(max_length=15)
     hm_code = models.CharField(max_length=8)
     locations = models.PointField(srid=4326)
+
+
+    def __str__(self):
+        return self.hm_code
     
 
 
 class General(models.Model):
-    hs_code = models.ForeignKey(Homested, on_delete=cascade)
-    hm_code = models.ForeignKey(Home, on_delete=cascade)
+    hs_code = models.ForeignKey(Homested, on_delete=models.CASCADE)
+    hm_code = models.ForeignKey(Homes, on_delete=models.CASCADE)
     time = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=25)
     relationshipToHead = models.CharField(max_length=15)
@@ -27,5 +34,9 @@ class General(models.Model):
     MemberOfHousehold = models.CharField(max_length=25)
     tribe_or_nationality = models.CharField(max_length=25)
     religion = models.CharField(max_length=25)
+
+
+    def __str__(self):
+        return self.name
 
 

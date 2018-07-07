@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
+    'leaflet',
     'mainCensus',
 ]
 
@@ -79,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'censuskenya',
-        'USER': 'censususer',
+        'USER': 'postgres',
         'PASSWORD': 31597310,
         'HOST': 'localhost',
         'PORT': 5432,

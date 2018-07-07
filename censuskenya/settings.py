@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'leaflet',
     'mainCensus',
+    'leaflet'
 ]
 
 MIDDLEWARE = [
@@ -81,9 +82,14 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'censuskenya',
         'USER': 'postgres',
+<<<<<<< HEAD
         'PASSWORD': 31597310,
+=======
+        'PASSWORD': 'amcountingall',
+>>>>>>> 7197252ad4e1ddf2d968e2c220939addfe72f3b1
         'HOST': 'localhost',
         'PORT': 5432,
+        
     }
 }
 
@@ -123,11 +129,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-STATIC_URL = '/static/'
-
 
 LEAFLET_CONFIG = {
     'DEFAULT_CENTER': (-0.5139816032277766,37.054996490478516),

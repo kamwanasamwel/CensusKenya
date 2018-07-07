@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 git rm --cached censuskenya/settings.py
 **/_pycache_/**
+=======
+<<<<<<< HEAD
+settings.py
+=======
+>>>>>>> 1b951f81e10f7f57eff36fb98a88245efd6ca358
+git rm --cached censuskenya/settings.py
+**/__pycache__/**
+>>>>>>> 7197252ad4e1ddf2d968e2c220939addfe72f3b1
 **/migrations/**
 **/.vscode/**
 db.sq**

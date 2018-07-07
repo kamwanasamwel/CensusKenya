@@ -1,6 +1,8 @@
+from django.contrib import admin
 from django.urls import path,include
-from mainCensus import views as mc_views
+from . import views
+
 urlpatterns = [
-    path('home/',mc_views.home,name='home'),
-    path('mainc/',mc_views.maincensus,name='mainc'),
+    path('admin/', admin.site.urls),
+    path('home', views.home, name='home')
 ]

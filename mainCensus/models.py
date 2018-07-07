@@ -1,4 +1,4 @@
-from django.db import models
+# from django.db import models
 from django.contrib.gis.db import models
 
 # Create your models here.
@@ -8,7 +8,7 @@ class Homested(models.Model):
 
 
 class Homes(models.Model):
-    hs_code = models.ForeignKey(Homested, on_delete=cascade)
+    hs_code = models.ForeignKey(Homested, on_delete=models.CASCADE)
     head = models.CharField(max_length=15)
     hm_code = models.CharField(max_length=8)
     locations = models.PointField(srid=4326)
@@ -16,8 +16,8 @@ class Homes(models.Model):
 
 
 class General(models.Model):
-    hs_code = models.ForeignKey(Homested, on_delete=cascade)
-    hm_code = models.ForeignKey(Home, on_delete=cascade)
+    hs_code = models.ForeignKey(Homested, on_delete=models.CASCADE)
+    hm_code = models.ForeignKey(Homes, on_delete=models.CASCADE)
     time = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=25)
     relationshipToHead = models.CharField(max_length=15)

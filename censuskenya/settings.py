@@ -79,10 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'censuskenya',
-        'USER': 'postgres',
+        'USER': 'censususer',
+        'PASSWORD': 31597310,
         'HOST': 'localhost',
         'PORT': 5432,
-        'PASSWORD': 31597310,
     }
 }
 
@@ -122,8 +122,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
-STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATIC_URL = '/static/'
+
+
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (-0.5139816032277766,37.054996490478516),
+    'DEFAULT_ZOOM': 10,
+    'MIN_ZOOM': 3,
+    'MAX_ZOOM': 16,
+    'SCALE':'both',
+    'TILES': 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    'ATTRIBUTION_PREFIX': 'Powered by Kenya Census &copy; LEAFLET',
+}

@@ -1,0 +1,5 @@
+git rm --cached censuskenya/settings.py
+**/__pycache__/**
+**/migrations/**
+**/.vscode/**
+db.sq**

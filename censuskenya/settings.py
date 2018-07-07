@@ -80,11 +80,42 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'censuskenya',
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'PASSWORD': 'transcend4gb',
+
+=======
+        'USER': 'censususer',
+        'PASSWORD': 31597310,
+        'HOST': 'localhost',
+        'PORT': 5432,
+>>>>>>> 3039206cb504d581d2e4666e4794801dd6898442
+=======
         'USER': 'postgres',
         'HOST': 'localhost',
         'PORT': 5432,
         'PASSWORD': 'julie',
         
+>>>>>>> 3b7c63a7e478008a7f841505ec4a9aff4f3626b9
+=======
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'PASSWORD': 'julie',
+        
+>>>>>>> 3b7c63a7e478008a7f841505ec4a9aff4f3626b9
+=======
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'PASSWORD': 'julie',
+        
+>>>>>>> 1b951f81e10f7f57eff36fb98a88245efd6ca358
     }
 }
 

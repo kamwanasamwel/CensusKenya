@@ -1,0 +1,13 @@
+.reporter{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 125px;
+}
+@media(max-width: 768px){
+	.reporter{
+		padding-right: 5px;
+		padding-left: 20px;
+		margin: auto;
+		margin-top: 125px;
+	}
+}

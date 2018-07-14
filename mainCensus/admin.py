@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.gis import admin
-from .models import General, Homes, Homested
+from leaflet.admin import LeafletGeoAdmin
+from .models import General, Homes, Homested, nyeri
 
 # admin.site.register()
 @admin.register(General)
@@ -15,8 +16,14 @@ class HomesAdmin(admin.ModelAdmin):
 
 
 @admin.register(Homested)
-class HomestedAdmin(admin.ModelAdmin):
+class HomestedAdmin(LeafletGeoAdmin):
     list_display = ('hs_code',)
+
+
+
+@admin.register(nyeri)
+class nyeriAdmin(LeafletGeoAdmin):
+    list_display = ('name','const_code', )
 # @admin.register(General) is equivalent to
 # admin.site.register(General, GeneralAdmin)
 # admin.site.register(General, admin.GeneralAdmin)

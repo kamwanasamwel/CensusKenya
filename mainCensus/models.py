@@ -64,12 +64,36 @@ class General(models.Model):
     didLast7Days = models.CharField(max_length=15, blank=True)
     mainEmployer = models.CharField(max_length=25, blank=True)
     livebirths = models.CharField(max_length=15, blank=True)
-    
+
+
+    def __str__(self):
+        return self.name
 
 
 
-
-
+class nyeri(models.Model):
+    const_code = models.BigIntegerField()
+    objectid_2 = models.BigIntegerField()
+    name = models.CharField(max_length=80)
+    objectid = models.BigIntegerField()
+    constituen = models.CharField(max_length=80)
+    county_ass = models.BigIntegerField()
+    spoilt = models.BigIntegerField()
+    county_a_1 = models.CharField(max_length=80)
+    rejected = models.BigIntegerField()
+    reported = models.BigIntegerField()
+    spoilt_val = models.FloatField()
+    valid = models.BigIntegerField()
+    disputed = models.BigIntegerField()
+    result = models.CharField(max_length=80)
+    county_cod = models.BigIntegerField()
+    shape_leng = models.FloatField()
+    county_nam = models.CharField(max_length=80)
+    shape_le_1 = models.FloatField()
+    registered = models.CharField(max_length=80)
+    shape_le_2 = models.FloatField()
+    shape_area = models.FloatField()
+    geom = models.MultiPolygonField(srid=4326)
 
     def __str__(self):
         return self.name

@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 {% load leaflet_tags %}
 {% block content %}
+{{j_son}}
 <div class="map" id="map">
-    {% leaflet_map 'census' %}
+    <script type="text/javascript">
+        function map_init_basic(map, options){
+            var myStyle = {};
+            var json_homes = {{ j_son|safe }};
+            L.geoJSON(json_homes).addTo(map);
+        }
+    </script>
+    {% leaflet_map 'census' callback="window.map_init_basic" %}
 </div>
 {% endblock %}
